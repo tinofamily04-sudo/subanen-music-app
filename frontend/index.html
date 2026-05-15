@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subanen Music Transcreation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER ADDED -->
+<div class="header">
+    <div class="logo">Subanen Music Transcreation</div>
+</div>
+
+<div class="container">
+    <p>Subanen Music Transcreation</p>
+
+    <div class="upload-box">
+        <input type="file" id="musicFile" accept=".mp3,.wav,.ogg">
+        <button id="uploadBtn">Upload & Transcribe</button>
+    </div>
+
+    <audio id="audioPlayer" controls style="display:none;"></audio>
+
+    <div id="results">
+        <div class="lyrics-section">
+            <h3>Original Lyrics</h3>
+            <p id="originalLyrics"></p>
+        </div>
+
+        <div class="lyrics-section">
+            <h3>Subanen Lyrics</h3>
+            <p id="subanenLyrics"></p>
+        </div>
+    </div>
+</div>
+<div id="loadingOverlay">
+    <div class="loader">
+        <div class="spinner"></div>
+        <p>Transcribing...</p>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
