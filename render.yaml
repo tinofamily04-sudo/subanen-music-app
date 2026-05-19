@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: subanen-api
+    env: python
+    plan: free
+    rootDir: python-api
+    buildCommand: bash build.sh
+    startCommand: gunicorn app:app
